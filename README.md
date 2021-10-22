@@ -39,5 +39,6 @@ git commit -m "ini"
 git push origin main
 ```
 - récupérer les dernières modifications:
+```
 git pull origin main
 ```
