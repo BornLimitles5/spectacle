@@ -30,3 +30,14 @@ git remote add origin + lien du dépot
 ```
 git add *
 ```
+- préciser un message pour le commit -m:
+```
+git commit -m "ini"
+```
+- envoyer les donées:
+```
+git push origin main
+```
+- récupérer les dernières modifications:
+git pull origin main
+```
