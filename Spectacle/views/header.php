@@ -39,10 +39,10 @@
           <a class="nav-link" href="index.php?page=posts">Concert</a>
         </li>
         <li class="nav-item">
-                    <a class="nav-link" href="index.php?page=contact">Cirque</a>
+                    <a class="nav-link" href="index.php?page=cirque">Cirque</a>
         </li>
         <li class="nav-item">
-                    <a class="nav-link" href="index.php?page=donate">Thêatres</a>
+                    <a class="nav-link" href="index.php?page=theatres">Thêatres</a>
         </li>
       </ul>
       
