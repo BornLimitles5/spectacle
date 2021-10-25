@@ -43,7 +43,10 @@
     header nav img {
         max-height: 35px;
     }
-
+    .coll{
+        display: flex;
+        flex-direction: column;
+    }
 /* **************************************** MAIN **************************************** */
 
     table img {
