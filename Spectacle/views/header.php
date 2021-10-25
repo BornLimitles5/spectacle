@@ -26,7 +26,7 @@
 </nav> -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid coll">
-    <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="logo Blog"></a>
+    <a class="navbar-brand" href="#"><img src="assets/img/kisspng-logo-font-brand-clip-art-line-nouveau-cirque-logo-transparent-png-stickpng-5b7c371fccb651.8841509215348672318385.png" alt="logo Blog"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
