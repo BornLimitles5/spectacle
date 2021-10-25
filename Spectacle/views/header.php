@@ -36,7 +36,7 @@
           <a class="nav-link active" aria-current="page" href="index.php?page=home">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.php?page=posts">Concert</a>
+          <a class="nav-link" href="index.php?page=concert">Concert</a>
         </li>
         <li class="nav-item">
                     <a class="nav-link" href="index.php?page=cirque">Cirque</a>
