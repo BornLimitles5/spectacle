@@ -1,7 +1,7 @@
 <?php
 
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'basu');
+define('DB_NAME', 'spectacle');
 define('DB_USER', 'root');
 define('DB_PASS', '');
 
