@@ -11,7 +11,7 @@
         </div>
         <div class="col-sm-12 col-md-4 p-5 text-center">
             <p class="text-center">
-                <img src="assets/img/kisspng-logo-font-brand-clip-art-line-nouveau-cirque-logo-transparent-png-stickpng-5b7c371fccb651.8841509215348672318385.png" alt="logo Blog" class="w-100">
+                <img src="assets/img/logo.png" alt="logo Blog" class="w-100">
             </p>
         </div>
         <div class="col-sm-12 col-md-4 p-5 text-center">
