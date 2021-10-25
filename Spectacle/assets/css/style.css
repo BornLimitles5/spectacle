@@ -52,5 +52,19 @@
     table img {
         max-width: 200px;
     }
+    .Box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+    }
 
+    h1{
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+    }
 /* **************************************** FOOTER **************************************** */
