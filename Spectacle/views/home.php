@@ -9,17 +9,17 @@
     <div class="row">
         <h2>Les derniers articles</h2>
         <?php
-            $req = $db->query('SELECT * FROM post ORDER BY id DESC LIMIT 3');
+            $req = $db->query('SELECT * FROM showtime ORDER BY id DESC LIMIT 3');
             $posts = $req->fetchAll();
             foreach ($posts as $post) { ?>
                 <div class="col-sm-12 col-md-4 p-3">
                     <div class="card">
-                        <img src="assets/img/posts/<?= $post['img'] ?>" class="card-img-top" alt="<?= $post['alt'] ?>">
+                        <img src="assets/img/posts/<?= $showtime['img'] ?>" class="card-img-top" alt="<?= $showtime['alt'] ?>">
                         <div class="card-body">
-                            <h5 class="card-title"><?= $post['title'] ?></h5>
-                            <h6 class="card-subtitle mb-2 text-muted"><?= date('Y-m-d', strtotime($post['created_at'])) . ' - ' . $post['author'] ?></h6>
-                            <p class="card-text"><?= substr($post['content'], 0, 200) . '...' ?></p>
-                            <a href="index.php?page=post&article=<?= $post['id'] ?>" class="btn btn-secondary">Lire la suite</a>
+                            <h5 class="card-title"><?= $showtime['title'] ?></h5>
+                            <h6 class="card-subtitle mb-2 text-muted"><?= date('Y-m-d', strtotime($showtime['created_at'])) . ' - ' . $post['author'] ?></h6>
+                            <p class="card-text"><?= substr($showtime['content'], 0, 200) . '...' ?></p>
+                            <a href="index.php?page=post&article=<?= $showtime['id'] ?>" class="btn btn-secondary">Lire la suite</a>
                         </div>
                     </div>
                 </div>
