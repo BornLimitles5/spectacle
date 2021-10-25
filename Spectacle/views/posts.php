@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-12">
             <?php
-                $req = $db->query('SELECT * FROM post ORDER BY id DESC');
+                $req = $db->query('SELECT * FROM showtime ORDER BY id DESC');
                 $posts = $req->fetchAll();
             ?>
             <table class="table table-bordered">

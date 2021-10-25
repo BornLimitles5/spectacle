@@ -4,9 +4,9 @@
             <h2>Préstations</h2>
             <div class="dropdown-divider bg-light"></div>
             <p><a href="index.php?page=home" class="text-light">Accueil</a></p>
-            <p><a href="index.php?page=concerts" class="text-light">Concerts</a></p>
-            <p><a href="index.php?page=cirques" class="text-light">Cirques</a></p>
-            <p><a href="index.php?page=theater" class="text-light">Thêatres</a></p>
+            <p><a href="index.php?page=concert" class="text-light">Concerts</a></p>
+            <p><a href="index.php?page=cirque" class="text-light">Cirques</a></p>
+            <p><a href="index.php?page=theatres" class="text-light">Thêatres</a></p>
             <p><a href="index.php?page=Seconnecter" class="text-light">Se connecter/S'inscrire</a></p>
         </div>
         <div class="col-sm-12 col-md-4 p-5 text-center">
