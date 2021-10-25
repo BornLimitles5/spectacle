@@ -24,7 +24,7 @@
         </div>
     </div>
 </nav> -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid coll">
     <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="logo Blog"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,13 +36,13 @@
           <a class="nav-link active" aria-current="page" href="index.php?page=home">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.php?page=posts">Type1</a>
+          <a class="nav-link" href="index.php?page=posts">Concert</a>
         </li>
         <li class="nav-item">
-                    <a class="nav-link" href="index.php?page=contact">Type2</a>
+                    <a class="nav-link" href="index.php?page=contact">Cirque</a>
         </li>
         <li class="nav-item">
-                    <a class="nav-link" href="index.php?page=donate">Type3</a>
+                    <a class="nav-link" href="index.php?page=donate">Thêatres</a>
         </li>
       </ul>
       
