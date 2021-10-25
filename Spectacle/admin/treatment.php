@@ -4,7 +4,7 @@ session_start();
 
 require_once('../config/database.php');
 
-if ($_SERVER['HTTP_REFERER'] == 'http://localhost:8888/DWWM13/PHP/blog/admin/form.php') { // vérifie qu'on vient bien du formulaire
+if ($_SERVER['HTTP_REFERER'] == 'http://localhost/dossier-TP/Spectacle/admin/form.php') { // vérifie qu'on vient bien du formulaire
 
     // nettoyage des données
     $title = htmlspecialchars($_POST['title']);

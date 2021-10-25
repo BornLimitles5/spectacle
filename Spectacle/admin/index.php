@@ -5,7 +5,7 @@
     }
     session_destroy();
     require_once('../config/database.php');
-    $req = $db->query('SELECT id, title, author, created_at FROM post ORDER BY id DESC');
+    $req = $db->query('SELECT id, image, descri, alt, prix, dateD, dateF, name, ville, salle FROM showtime ORDER BY id DESC');
     $posts = $req->fetchAll();
 ?>
 
@@ -33,23 +33,34 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>TITRE</th>
-                    <th>AUTEUR</th>
-                    <th>CRÉATION</th>
-                    <th>ACTIONS</th>
+                    <th>image</th>
+                    <th>description</th>
+                    <th>alt</th>
+                    <th>prix</th>
+                    <th>dateD</th>
+                    <th>dateF</th>
+                    <th>name</th>
+                    <th>ville</th>
+                    <th>salle</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
-                    foreach ($posts as $post) { ?>
+                    foreach ($posts as $showtime) { ?>
                         <tr>
-                            <td><?= $post['id'] ?></td>
-                            <td><?= $post['title'] ?></td>
-                            <td><?= $post['author'] ?></td>
-                            <td><?= $post['created_at'] ?></td>
+                            <td><?= $showtime['id'] ?></td>
+                            <td><?= $showtime['image'] ?></td>
+                            <td><?= $showtime['descri'] ?></td>
+                            <td><?= $showtime['alt'] ?></td>
+                            <td><?= $showtime['prix'] ?></td>
+                            <td><?= $showtime['dateD'] ?></td>
+                            <td><?= $showtime['dateF'] ?></td>
+                            <td><?= $showtime['name'] ?></td>
+                            <td><?= $showtime['ville'] ?></td>
+                            <td><?= $showtime['salle'] ?></td>
                             <td>
                                 <a href="#"><i class="fas fa-pen-square"></i></a>
-                                <a href="treatment.php?delete=<?= $post['id'] ?>"><i class="fas fa-trash"></i></a>
+                                <a href="treatment.php?delete=<?= $showtime['id'] ?>"><i class="fas fa-trash"></i></a>
                             </td>
                         </tr>    
                     <?php }
