@@ -114,7 +114,7 @@
             </tbody>
         </table>
 
-        <a href="form.php">Ajouter un article</a>
+        <a href="form2.php">Ajouter un article</a>
          <table>
             <thead>
                 <h2>Table Concerto</h2>
@@ -155,7 +155,7 @@
             </tbody>
         </table>
 
-        <a href="form.php">Ajouter un article</a>
+        <a href="form3.php">Ajouter un article</a>
         
     </body>
 

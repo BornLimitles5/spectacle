@@ -20,7 +20,7 @@
 
     </head>
     
-        <form action="treatment.php" method="post" enctype="multipart/form-data">
+        <form action="treatment2.php" method="post" enctype="multipart/form-data">
 
             <label for="name">Titre</label>
             <input type="text" name="name" maxlength="100"  required>
