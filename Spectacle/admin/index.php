@@ -106,7 +106,7 @@
                             <td><?= $cirque['salle'] ?></td>
                             <td>
                                 <a href="#"><i class="fas fa-pen-square"></i></a>
-                                <a href="treatment.php?delete=<?= $cirque['id'] ?>"><i class="fas fa-trash"></i></a>
+                                <a href="treatment2.php?delete=<?= $cirque['id'] ?>"><i class="fas fa-trash"></i></a>
                             </td>
                         </tr>    
                     <?php }
@@ -147,7 +147,7 @@
                             <td><?= $concert['salle'] ?></td>
                             <td>
                                 <a href="#"><i class="fas fa-pen-square"></i></a>
-                                <a href="treatment.php?delete=<?= $concert['id'] ?>"><i class="fas fa-trash"></i></a>
+                                <a href="treatment3.php?delete=<?= $concert['id'] ?>"><i class="fas fa-trash"></i></a>
                             </td>
                         </tr>    
                     <?php }

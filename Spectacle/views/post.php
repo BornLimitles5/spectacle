@@ -1,5 +1,5 @@
 <?php
-    $id = (int)$_GET['article'];
+    $id = (int)$_GET['articles'];
     $req = $db->query('SELECT * FROM post WHERE id=' . $id);
     $post = $req->fetch();
 ?>

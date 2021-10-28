@@ -23,7 +23,7 @@
                   <h5 class="card-title"><?= $post['name'] ?></h5>
                   <h6 class="card-subtitle mb-2 text-muted"><?= $post['ville'] . ' - '.'Salle' .' ' . $post['salle'] .'-'. '<br>'. 'Du'.' ' . $post['dateD'] .'<br>'.'Au'.' '.$post['dateF'].' '  ?></h6>
                   <p class="card-text"><?= substr($post['descri'],0,100). '...' ?></p>
-                 <a href="index.php?page=post&article=<?= $post ['id'] ?>" class="btn btn-secondary">Lire la suite</a>
+                 <a href="index.php?page=post&articles=<?= $post ['id'] ?>" class="btn btn-secondary">Lire la suite</a>
              </div>
          </div>
          

@@ -31,7 +31,7 @@
                                 <td><img src="assets/img/posts/<?= $post['img'] ?>" alt="<?= $post['alt'] ?>"></td>
                                 <td><?= date('Y-m-d', strtotime($post['created_at'])) ?></td>
                                 <td><?= $post['author'] ?></td>
-                                <td><a href="index.php?page=post&article=<?= $post['id'] ?>"><i class="fas fa-eye"></i></a></td>
+                                <td><a href="index.php?page=post&articles=<?= $post['id'] ?>"><i class="fas fa-eye"></i></a></td>
                             </tr>
                         <?php 
                             $i++;   
