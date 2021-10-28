@@ -20,7 +20,7 @@
 
     </head>
     
-        <form action="treatment.php" method="post" enctype="multipart/form-data">
+        <form action="treatment3.php" method="post" enctype="multipart/form-data">
 
             <label for="name">Titre</label>
             <input type="text" name="name" maxlength="100"  required>
@@ -38,7 +38,7 @@
             <input type="text" name="ville" maxlength="45"  required>
 <br><br>
             <label for="prix">prix</label>
-            <input type="number" name="prix" min="0" max="9000" step="0.01" required>
+            <input type="number" name="prix" min="0" max="9000" step="0.01"  required>
 <br><br>
              <label for="dateD">Date de début</label>
             <input type="datetime-local" name="dateD" min="2021-27-10-T00:00"  required>

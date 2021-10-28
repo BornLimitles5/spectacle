@@ -4,7 +4,7 @@ session_start();
 
 require_once('../config/database.php');
 
-if ($_SERVER['HTTP_REFERER'] == 'http://localhost/dossier-tp/Spectacle/admin/form.php') { // vérifie qu'on vient bien du formulaire
+if ($_SERVER['HTTP_REFERER'] == 'http://localhost/dossier-tp/Spectacle/admin/form3.php') { // vérifie qu'on vient bien du formulaire
 
     // nettoyage des données
     $name = htmlspecialchars($_POST['name']);
@@ -78,7 +78,7 @@ if ($_SERVER['HTTP_REFERER'] == 'http://localhost/dossier-tp/Spectacle/admin/for
         $timestamp = time(); // récupère le nombre de secondes écoulées depuis le 1er janvier 1970
         $format = strchr($_FILES['image']['name'], '.'); // récupère tout ce qui se trouve après le point (png, jpg, ...)
         $imgName = $timestamp . $format; // crée le nouveau nom d'image
-        $req = $db->prepare('INSERT INTO showtime (name, alt, ville, salle, dateF, prix, image, dateD, descri) VALUES (:name, :alt, :ville, :salle, :dateF, :prix, :image, :dateD, :descri)');
+        $req = $db->prepare('INSERT INTO concerto (name, alt, ville, salle, dateF, prix, image, dateD, descri) VALUES (:name, :alt, :ville, :salle, :dateF, :prix, :image, :dateD, :descri)');
         $req->bindParam(':name',$name, PDO::PARAM_STR);
         $req->bindParam(':alt',$alt, PDO::PARAM_STR);
         $req->bindParam(':ville',$ville, PDO::PARAM_STR);
@@ -100,12 +100,12 @@ if ($_SERVER['HTTP_REFERER'] == 'http://localhost/dossier-tp/Spectacle/admin/for
 
 } elseif (isset($_GET['delete']) && !empty($_GET['delete'])) {
     $id = (int)$_GET['delete'];
-    $req = $db->query('SELECT image FROM showtime WHERE id=' . $id); // récupère le nom de l'image
+    $req = $db->query('SELECT image FROM concerto WHERE id=' . $id); // récupère le nom de l'image
     $oldImg = $req->fetch();
     if (file_exists('../assets/img/posts/' . $oldImg['image'])) { // vérifie que le fichier existe
         unlink('../assets/img/posts/' . $oldImg['image']); // supprime l'image du dossier local
     }
-    $reqDelete = $db->query('DELETE FROM showtime WHERE id=' . $id); // supprime les données en bdd
+    $reqDelete = $db->query('DELETE FROM concerto WHERE id=' . $id); // supprime les données en bdd
 }
 
 header('Location: index.php'); // redirection

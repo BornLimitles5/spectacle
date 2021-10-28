@@ -13,8 +13,8 @@
          
           <?php 
        
-        $req = $db->query('SELECT * FROM showtime ORDER BY id ASC LIMIT 3');
-        $posts = $req->fetchALL();
+        $req = $db->query('SELECT * FROM showtime ORDER BY id DESC LIMIT 3');
+        $posts = $req->fetchAll();
         foreach ($posts as $post) { ?>
 
          <div class="card" style="width: 18rem;">
